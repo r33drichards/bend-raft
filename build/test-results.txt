@@ -1,0 +1,20 @@
+✔ election, replicated write, logged read, duplicate suppression (6.232131ms)
+✔ duplicates and stale votes do not elect candidate (0.291086ms)
+✔ vote persists across restart and cannot be cast twice (0.227136ms)
+✔ short delayed append retains suffix and bounds follower commit by matched index (0.982154ms)
+✔ commit requires current-term entry, stale responses ignored (2.745839ms)
+✔ isolated leader cannot acknowledge new operation (0.837795ms)
+✔ restart rebuilds application state from committed log (0.692574ms)
+✔ client model keeps retry identity and advances only matching success (0.927297ms)
+✔ host persists before effects and fail-stops after storage error (2.735729ms)
+✔ pure main smoke trace commits value seven (0.41658ms)
+✔ new leader retains committed value and fences old-term acknowledgments (1.060826ms)
+✔ host recovery resets stale leader and replication progress before accepting events (1.068067ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 162.673748

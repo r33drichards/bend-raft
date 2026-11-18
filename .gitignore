@@ -1,0 +1,8 @@
+build/.emcache/
+build/program.c
+build/wasm-core.c
+build/compiler-abi.ts
+build/wasm-source.bend
+build/wasm-oracle.mjs
+.emcache/
+node_modules/

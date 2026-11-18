@@ -1,0 +1,14 @@
+{
+  "name": "bend-raft-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/compile.mjs",
+    "test": "node --test test/*.mjs",
+    "check:model": "python3 tools/check_election_certificates.py",
+    "emit:wasm-c": "node tools/emit-wasm-c.mjs",
+    "build:wasm": "node tools/build-wasm.mjs",
+    "test:wasm": "RAFT_WASM_TEST=1 node --test test/*.mjs",
+    "fuzz:wasm": "node tools/fuzz.mjs 42 100 200 --backend wasm"
+  }
+}

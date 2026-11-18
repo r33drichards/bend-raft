@@ -1,0 +1,35 @@
+{
+  "bend": "4f99f4c19e1a91fd4c3a9377363d580171d4d40c",
+  "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 4.0.21 (d6f42310010ddec0753a69bab01a4b33aae255b7)",
+  "node": "v24.22.1",
+  "target": "wasm32 + Emscripten Node launcher",
+  "threads": 1,
+  "gpu": false,
+  "abi": "raft-list-nat-v1",
+  "instrumentation": "LLVM trace-pc-guard, full C module incl runtime and codec",
+  "flags": [
+    "-O1",
+    "-mtail-call",
+    "-fsanitize-coverage=trace-pc-guard",
+    "-sALLOW_MEMORY_GROWTH=1",
+    "-sMAXIMUM_MEMORY=1073741824",
+    "-sSTACK_SIZE=8388608",
+    "-sENVIRONMENT=node",
+    "-sMODULARIZE=1",
+    "-sEXPORT_ES6=1",
+    "-sEXPORTED_FUNCTIONS=[\"_raft_call\",\"_raft_out_ptr\",\"_raft_out_len\",\"_raft_cov_ptr\",\"_raft_cov_len\",\"_raft_cov_reset\",\"_malloc\",\"_free\"]",
+    "-sEXPORTED_RUNTIME_METHODS=[\"HEAPU8\",\"HEAPU32\"]",
+    "--no-entry",
+    "-o",
+    "build/wasm/raft.mjs"
+  ],
+  "sha256": {
+    "src/raft.bend": "fe764637148638a8763d54d734ff79a17d1f649289fa9f9215f3a573bbcaf451",
+    "src/wasm.bend": "0ca179e38b11bba94bccfa8918feb10334e956102a736a46947fe33793445432",
+    "tools/generate-wire.mjs": "7bab704b1d237669574171dd59d346159089b82c500a0c865281bb6e9cf367c7",
+    "tools/wire-schema.mjs": "8328ef9615a65b3fc0e139d0e1e7402cc5cf5790561e16b132049afa796e760e",
+    "tools/wasm-bridge.c": "b345d7afdf4e46634b3bba734a70af711c7f46014c44b78ec027b8d44a7cafbb",
+    "tools/coverage.c": "bff930cdbc4882ef695d95c49db6726340123b6e761b5e5ca1f253f406615eed",
+    "build/wasm/raft.wasm": "dbb766d8c2c0a1b86fe1b1177572d2bf0fbb68ba1960430b785958712825632c"
+  }
+}

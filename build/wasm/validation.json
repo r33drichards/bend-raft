@@ -1,0 +1,11 @@
+{
+  "node": "24.22.1",
+  "emscripten": "4.0.21",
+  "actual_wasm_init": "PASS, complete State decoded",
+  "coverage_guards_available": 11740,
+  "coverage_guards_hit_after_init": 271,
+  "worker_reported_wasm_differential_tests": "4 tests PASS, zero skipped (before minimizer test was added)",
+  "worker_reported_replay": "200 scheduler steps PASS, 3352 coverage features",
+  "campaign_100_by_200": "completion not yet confirmed; not evidence of a pass",
+  "claim_scope": "tests only, not a correctness/refinement proof"
+}

@@ -1,0 +1,10 @@
+{
+  "model": "single-term election certificates, not full Raft",
+  "voters": 3,
+  "quorum": 2,
+  "reachable_states": 547,
+  "generated_edges_including_stutter": 2730,
+  "complete_for_this_finite_model": true,
+  "election_certificate_uniqueness": "PASS",
+  "implementation_refinement": "NOT CHECKED"
+}
